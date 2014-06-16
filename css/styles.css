@@ -1,0 +1,14 @@
+/*Most styles set by bootstrap.css */
+body {font-family: "Oxygen", sans-serif;margin: 20px; border: 5px solid grey; padding: 25px;}
+.panelClass {background-color: #efefef;}
+#message1 { margin: 20px; border: 1px solid grey; }
+#message2 { margin:20px; border: 1px solid green; }
+#message3 { margin:20px; border: 1px solid blue; }
+.sep { width: 100%; height: 2px; background-color: grey; margin: 10px 0 10px 0;}
+div { display: block; margin: 10px 0 10px 0;}
+input.glowing:focus {
+    outline: none;
+    border-color: Chocolate;
+    box-shadow: 0 0 10px Chocolate;
+}
+.whenAlert { width: 50px; height: 50px; border: 1px solid black; background-color: red;}

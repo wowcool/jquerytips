@@ -1,0 +1,222 @@
+[
+  {
+    "id": 0,
+    "guid": "1e9a27ad-24db-40f6-b08f-7136329db41b",
+    "isActive": false,
+    "balance": "$1,494.29",
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "brown",
+    "name": "Contreras Ramirez",
+    "gender": "male",
+    "company": "EVENTEX",
+    "email": "contrerasramirez@eventex.com",
+    "phone": "+1 (808) 544-3231",
+    "address": "189 Beverly Road, Ada, Georgia, 4836",
+    "about": "In fugiat id elit et velit duis enim Lorem aute aliqua ad tempor laboris. Cupidatat Lorem sunt irure sint ipsum qui cupidatat culpa aliquip do anim ex. Fugiat cupidatat pariatur id Lorem. Lorem dolor dolore minim elit adipisicing. Ea mollit incididunt cillum reprehenderit dolore aliquip exercitation tempor. Minim dolor Lorem sint officia fugiat voluptate ad cupidatat amet commodo non esse. Veniam occaecat eiusmod ex commodo deserunt aliquip quis consectetur.\r\n",
+    "registered": "2014-04-17T02:10:42 +04:00",
+    "latitude": -36.288407,
+    "longitude": 29.199482,
+    "tags": [
+      "incididunt",
+      "proident",
+      "proident",
+      "eu",
+      "deserunt",
+      "ea",
+      "nostrud"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Chapman Mathis"
+      },
+      {
+        "id": 1,
+        "name": "Annmarie Waters"
+      },
+      {
+        "id": 2,
+        "name": "Kristen Nelson"
+      }
+    ],
+    "greeting": "Hello, Contreras Ramirez! You have 2 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": 1,
+    "guid": "270b8a63-dbca-47fd-9d1d-20c786d619a9",
+    "isActive": false,
+    "balance": "$2,567.50",
+    "picture": "http://placehold.it/32x32",
+    "age": 33,
+    "eyeColor": "brown",
+    "name": "Abbott Peterson",
+    "gender": "male",
+    "company": "GENEKOM",
+    "email": "abbottpeterson@genekom.com",
+    "phone": "+1 (988) 460-3976",
+    "address": "459 Perry Terrace, Madaket, Minnesota, 277",
+    "about": "Cupidatat adipisicing mollit do non officia do. Reprehenderit laborum nostrud id Lorem anim magna duis incididunt sunt ad voluptate nisi laborum. Excepteur eu id dolore magna quis fugiat Lorem mollit exercitation.\r\n",
+    "registered": "2014-01-10T06:52:39 +05:00",
+    "latitude": 53.366699,
+    "longitude": -157.222531,
+    "tags": [
+      "deserunt",
+      "id",
+      "proident",
+      "incididunt",
+      "et",
+      "ut",
+      "officia"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Serena Wallace"
+      },
+      {
+        "id": 1,
+        "name": "Angelia Flores"
+      },
+      {
+        "id": 2,
+        "name": "Sasha Mckenzie"
+      }
+    ],
+    "greeting": "Hello, Abbott Peterson! You have 8 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": 2,
+    "guid": "91f495b5-6bd4-4921-978c-832cd7c6bfb6",
+    "isActive": false,
+    "balance": "$1,820.96",
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "brown",
+    "name": "Curry Bass",
+    "gender": "male",
+    "company": "ANIMALIA",
+    "email": "currybass@animalia.com",
+    "phone": "+1 (997) 443-3417",
+    "address": "615 Seaview Avenue, Dubois, Connecticut, 3853",
+    "about": "Laborum consequat veniam culpa proident voluptate ea labore nisi ipsum reprehenderit do do. Velit labore et qui culpa laboris deserunt. Nisi sint sit et aliquip. Exercitation do duis sit qui ut commodo minim consectetur velit et eu incididunt. Eiusmod occaecat tempor anim aliquip duis elit deserunt velit deserunt eu. Cillum veniam ea magna sint id mollit enim enim dolore pariatur. Et commodo et reprehenderit velit minim anim culpa ipsum esse et ad occaecat.\r\n",
+    "registered": "2014-06-08T06:33:05 +04:00",
+    "latitude": -1.808598,
+    "longitude": -171.126029,
+    "tags": [
+      "excepteur",
+      "occaecat",
+      "dolore",
+      "commodo",
+      "esse",
+      "minim",
+      "voluptate"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Jimmie Walter"
+      },
+      {
+        "id": 1,
+        "name": "Yesenia Fitzpatrick"
+      },
+      {
+        "id": 2,
+        "name": "Allie Ramos"
+      }
+    ],
+    "greeting": "Hello, Curry Bass! You have 7 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": 3,
+    "guid": "a18e55d3-88e3-4f38-89c2-3bfdcd679855",
+    "isActive": true,
+    "balance": "$3,910.22",
+    "picture": "http://placehold.it/32x32",
+    "age": 22,
+    "eyeColor": "blue",
+    "name": "Meghan Hancock",
+    "gender": "female",
+    "company": "LETPRO",
+    "email": "meghanhancock@letpro.com",
+    "phone": "+1 (809) 526-3321",
+    "address": "306 Portal Street, Malo, South Dakota, 1458",
+    "about": "Amet velit eu elit veniam sunt quis enim do cillum occaecat quis eiusmod. Velit mollit veniam ad nulla exercitation eu commodo ipsum nostrud et pariatur commodo in pariatur. Non irure sit id ipsum ex elit in ipsum labore ex eiusmod ullamco enim proident. Aliqua qui cupidatat magna cillum eiusmod anim. Occaecat excepteur cupidatat eu mollit. Ad occaecat incididunt anim fugiat id irure enim ut dolor minim. Duis ipsum ullamco dolor ex consectetur laboris esse et officia irure quis dolore culpa enim.\r\n",
+    "registered": "2014-01-12T20:01:33 +05:00",
+    "latitude": -60.68716,
+    "longitude": 46.196094,
+    "tags": [
+      "consequat",
+      "amet",
+      "deserunt",
+      "ut",
+      "mollit",
+      "duis",
+      "enim"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Norris Blackwell"
+      },
+      {
+        "id": 1,
+        "name": "Skinner Guzman"
+      },
+      {
+        "id": 2,
+        "name": "Mcclure Freeman"
+      }
+    ],
+    "greeting": "Hello, Meghan Hancock! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": 4,
+    "guid": "abbb5912-7b18-4b09-8337-ca385edbd565",
+    "isActive": false,
+    "balance": "$3,422.41",
+    "picture": "http://placehold.it/32x32",
+    "age": 37,
+    "eyeColor": "blue",
+    "name": "Clara Hendrix",
+    "gender": "female",
+    "company": "MEDCOM",
+    "email": "clarahendrix@medcom.com",
+    "phone": "+1 (850) 526-2286",
+    "address": "648 Rost Place, Brambleton, Nebraska, 1287",
+    "about": "Esse enim dolor sit officia. Laboris excepteur ullamco elit labore sunt. In enim labore sint irure non et nisi quis veniam eiusmod labore. Nulla in sit irure aliqua dolore commodo elit nisi adipisicing occaecat eu commodo amet officia. Nisi nisi enim magna laboris aliquip ex sit eu do.\r\n",
+    "registered": "2014-02-02T16:51:43 +05:00",
+    "latitude": -42.397367,
+    "longitude": -53.315193,
+    "tags": [
+      "eiusmod",
+      "anim",
+      "nisi",
+      "ex",
+      "sunt",
+      "nulla",
+      "sint"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Tina Mcmillan"
+      },
+      {
+        "id": 1,
+        "name": "Pittman Dillon"
+      },
+      {
+        "id": 2,
+        "name": "Kim Cherry"
+      }
+    ],
+    "greeting": "Hello, Clara Hendrix! You have 10 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]

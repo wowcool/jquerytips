@@ -1,0 +1,1004 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"test",
+				"testJSON"
+			],
+			[
+				"Whe",
+				"whenMessage"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"clear",
+				"clearImages"
+			],
+			[
+				"get",
+				"getFlikr"
+			],
+			[
+				"getFli",
+				"getFlikrPromise"
+			],
+			[
+				"click",
+				"click	click"
+			],
+			[
+				"aja",
+				"ajaxstart	$.ajaxStart()"
+			],
+			[
+				"function",
+				"functionToRun"
+			],
+			[
+				"imm",
+				"imgMessage"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"custo",
+				"customEvent"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"cli",
+				"clicked"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"toa",
+				"toastr"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"don",
+				"dontBubble"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"doesn",
+				"doesntExist"
+			],
+			[
+				"messa",
+				"message1"
+			],
+			[
+				"append",
+				"appendTo	.appendTo()"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"loop",
+				"loopthrough"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"orders",
+				"ordersDiv"
+			],
+			[
+				"order",
+				"ordersContainer"
+			],
+			[
+				"email",
+				"emailDiv"
+			],
+			[
+				"has",
+				"hasClass	.hasClass"
+			],
+			[
+				"hasPa",
+				"hasPanelClass"
+			],
+			[
+				"con",
+				"containerDiv"
+			],
+			[
+				"emai",
+				"emailDiv"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"sl",
+				"slideUp	.slideUp()"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"content",
+				"contentKey"
+			],
+			[
+				"erro",
+				"errorMessage"
+			],
+			[
+				"err",
+				"errorMessage"
+			],
+			[
+				"pu",
+				"pullContent"
+			],
+			[
+				"tar",
+				"pullTarget"
+			],
+			[
+				"nav",
+				"navClicked"
+			],
+			[
+				"mo",
+				"mouseover	mouseover"
+			],
+			[
+				"about",
+				"aboutMePage"
+			],
+			[
+				"main",
+				"mainContainer"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"toggle",
+				"toggle	.toggle() (show/hide)"
+			],
+			[
+				"wa",
+				"watchInput"
+			],
+			[
+				"mouse",
+				"mouseup	mouseup"
+			],
+			[
+				"mou",
+				"mouseup	mouseup"
+			],
+			[
+				"hi",
+				"highlight"
+			],
+			[
+				"toggl",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"input",
+				"input1"
+			],
+			[
+				"togg",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"red",
+				"redDiv"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"repla",
+				"replaceWith	replaceWith"
+			],
+			[
+				"tab",
+				"tableContainer"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"font-e",
+				"font-style"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"fa",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"each",
+				"each	.each()"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"a",
+				"aDate"
+			],
+			[
+				"ad",
+				"aDateMillis"
+			],
+			[
+				"three",
+				"threeDaysFromNow"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"to",
+				"toLocaleString"
+			],
+			[
+				"seac",
+				"searchTerm"
+			],
+			[
+				"search",
+				"searchTerm"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"parse",
+				"parseThis"
+			],
+			[
+				"curre",
+				"currentClass"
+			],
+			[
+				"cu",
+				"currentClass"
+			],
+			[
+				"pa",
+				"parseThis"
+			],
+			[
+				"str",
+				"stringify"
+			],
+			[
+				"this",
+				"thisSpan"
+			],
+			[
+				"set",
+				"setItem"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"span",
+				"spanDelete"
+			],
+			[
+				"color",
+				"colorItem"
+			],
+			[
+				"colors",
+				"colors"
+			],
+			[
+				"co",
+				"color2"
+			],
+			[
+				"s",
+				"submitButton"
+			],
+			[
+				"remo",
+				"removeItem"
+			],
+			[
+				"local",
+				"localStorage"
+			],
+			[
+				"loc",
+				"localStorage"
+			],
+			[
+				"fav",
+				"favGenre"
+			],
+			[
+				"re",
+				"responseText"
+			],
+			[
+				"tweet",
+				"tweetParsed"
+			],
+			[
+				"twee",
+				"tweetsFragment"
+			],
+			[
+				"tweets",
+				"tweetsFragment"
+			],
+			[
+				"twe",
+				"tweets"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"se",
+				"setAttreibute"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"du",
+				"dueDate"
+			],
+			[
+				"todo",
+				"todoItem"
+			],
+			[
+				"json",
+				"jsonParsed"
+			],
+			[
+				"status",
+				"statusList"
+			],
+			[
+				"jesse",
+				"jesseParsed"
+			],
+			[
+				"jess",
+				"jesseParsed"
+			],
+			[
+				"pick",
+				"picklesJSON"
+			],
+			[
+				"pet",
+				"petsArrayJSON"
+			],
+			[
+				"p",
+				"pickels"
+			],
+			[
+				"close",
+				"closeBoxTrigger"
+			],
+			[
+				"closeB",
+				"closeBoxTrigger"
+			],
+			[
+				"box",
+				"boxCount"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!--//- Questions for Matt\n--- 5/17/14 Call  \n\n1. In the album.scss did I anwser the question on Margin Vs. Padding correctly, and if not, why? \n\n2. See Jade Mixin's ( Album.jade/ln 38 ) If I wanted to throw a javascript variable in here (for a random time lets say), \n	would I insert the javascript under a .script tag the header, and then how to call that variable in code from Jade? \n\n3. Album View: See if the way I made the text float right was a good method, or was I putting a bandaid on another issue? \n\n4. I used an !important tag on _album_collection to remove the top border, and on the thumbnail to remove backgroundf and border, \n   was this correct? \n\n5.Take a look at Json Editor for future use. \n\n6. Ask about Git terminal commit issues (http://onetoshare.com/5gLP). Also, related : Pushing to git push origin master doesnt seem to work, \nbut pushing to git push github master does. \n\n7. Issue with getting Jquery to work with current checkpoint. \n\n----5/24/2014 Call \n\n1. General : In JS, when setting a property, when to use sing quotes ('') and when to use doubles (\"\")? (Reference: http://onetoshare.com/i8VO)\n\n2. OST : Look at photos.js, function addImage ( line 61 ) and discuss (e) parameter, and e.target. Lets discuss event delegation. \n\n3. General : Difference between document.querySelector and .querySelectorAll ( lets say for a class of .test)\n\n4. Album.js line 63 : $songList.empty();  - does this clear the $songList element if there is anything in it? \n\n5. Album.js Line 96 : Take a peek at the click handler I built to handle the play button roll over, and see about buggyness. (When you roll over .songRow it replaces itself with itself, because of my use of $previous?... ideas on how to avoid this? \n\n6. OST : Look at Current Ajax Work and comment on. \n\n\n----6/9/14 Call \n\n//Bloc Related //\n# Checkpoints Done (but not submitted due to account freeze):  \n##446 : I understand most of this from my training to date. Didnt play with REPL a ton, also there are checkpoint documentation issues here that make the setup of this hard. Repo shoubd be created before you are asked to run REPL in the directory that doesnt exist. Contacted Bloc Support. \n##447 : This should be 446, and 446 should be 447. Mocha Runs ok for me : http://onetoshare.com/Mx9l\n##448 : Done and Comitted, but see question 3 below. Having trouble editing these files in Sublime. \n##449 : Done and Committed. Still curious where the property values are coming from ;). \n\n\n# Questions : \n\n##450 & 451 (JS Exercises w/Mocha Tests) : Got stuck here on the way these mocha tests are set up. Don't feel they explain well enough how the test sar e being run to understand how to solve them. Often one test would pass and others would fail. Also, see # 3 below.   \n\n1. See about fixing git-osxkeychain issues ( https://help.github.com/articles/set-up-git#password-caching ) Screenshot : http://onetoshare.com/jJt6\n\n2. Pushing to Heroku issues. \n\n3. Strange issue with Javascript challenges. Files in terminal not matching files on system. Ended up using VIM editor to modify spec.js to fix issue. For example, I created a new folder on finder and it doesnt show in terminal - whats causing this? \n	\n    Also, a question about this function in challenge.js - where are the 'text' and 'address' property values coming from ( who is passing them to this function )  ? \n\n//------------------End Bloc Related -------------------//\n\n-->\n----6/9/14 Call ( 45 Minutes )\n\n##General: \n\n#My curriculum I put together  - thoughts. Focusing on Jquery, vs mastering pure JS -  good/bad/other. I Am using PLuralsight over Orielly for now, $$. Suggested Order? ( JQuery > Angular > Node > Mongo > Express - etc. )\n\n##Jquery : \n\n//-Manipultation--//\n\n#What does it mean to 'detach' an element from the dom, does this go into something like Local Storage? How is this different than removing it? \n\n	//Detach retains the data assoc. with the node, remove deletes it. \n\n\n#Talk a little about get vs post, and jQuery Ajax and how we will use it.getJSON vs. .ajax   & jSONp\n\n	//Cross Origin Resource Sharing (CORS Request)\n\n#Initilizine a selector, and then add value - or all at same time? Difference? (http://onetoshare.com/M1nB)\n\n\n\n##Vagrant/Server\n\n#I Set up Node server on vagrant. Check out structure and show me where/how I sould start using it within it's structure: \n	 # where to init git\n	 # what to install on top of this, etc. \n	 # Help me set up a sync for my  vagrant box so I can manipulate files locally using Sublime (instead of VIM). I know there is a way to have a local folder sync with a vagrant folder. \n\n#Do you have a node script / other I could use to experiment with more advanced get requests? OR, a good API I could try calling data from and formatting it to practice calling data and manipulating it? Ideas around this. \n\nNotes from call : \n\n	Variable Declaration :  http://pastebin.com/4X5yKqkM\n	Create an Express Server : express --css styus appname\n	Create a MEAN servert : mean init yourNewApp\n	JSON GEnerator :  http://www.json-generator.com/\n	Passing Data : app.get(\"/getData\", function (req, res) { res.write( /*JSON GOES HERE*/ ); })\n	res.end()\n	res.writeHeader({\"Content-Type\": \"application/json\"});\n	res.statusCode = 200;\n	unction (req, res) { hitTheDataBase({id: 5}).then(function (data) { res.end(data); })\n\n-------\n\n6/13/14 Call\n\n##JQeury: \n\n#1. .data(data) : http://onetoshare.com/RIL0\n\n#2. How to target other node in the console for jQuery._data ( http://onetoshare.com/Av7q )\n\n#3. re-using method as event handler. Explain. See if can fix in my tips and tricks file, line 230.\n\n***#4. Having trouble attaching an ID to a span, but when using a div it works. Is there something about spans? (T&T 280)\n\n#5. Refresher on Breakpoints and how to use debugger; \n\n#6. Review the promise Ajax call I built and explain why it's more efficient. Does this reduce JSON calls, or does it simply allow you to define the call in one place and not have to change it in multiple places?\n\n#7. Using the .when function to resolve mutliple promises, what data do you pass into the .done method. (T&T 433)\n\n#8. Billing : how we should handle each week. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			"file": "/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Questions-For-Matt.html",
+			"file_size": 6167,
+			"file_write_time": 1402703430000000,
+			"settings":
+			{
+				"buffer_size": 6170,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jesse.html",
+			"settings":
+			{
+				"buffer_size": 22199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/dataservices.js",
+			"settings":
+			{
+				"buffer_size": 750,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "json/1.json",
+			"settings":
+			{
+				"buffer_size": 8297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styles.css",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 209.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/jquery-tips-and-tricks/3-jquery-tips-and-tricks-m3-exercise-files/Code/End/AjaxTipsAndTricks/Scripts/dataService.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/json/3.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/css/styles.css",
+		"/Users/JTSeaver/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/jquery-tips-and-tricks/2-jquery-tips-and-tricks-m2-exercise-files/after/06-reusing-method-as-event-handler.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/css/jquery-ui.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/JQuery Tips & Tricks/css/bootstrap.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Molly Fletcher Lynch/2014/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Molly Fletcher Lynch/2014/styles/styles.css",
+		"/Users/JTSeaver/Desktop/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Molly Fletcher Lynch/2014/content.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/exercises/jquery-fundamentals/3-jquery-fundamentals-dom-exercise-files/jQueryDOM/HTMLOnly/helpDetails.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/exercises/jquery-fundamentals/3-jquery-fundamentals-dom-exercise-files/jQueryDOM/HTMLOnly/sftp-config.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/exercises/jquery-fundamentals/3-jquery-fundamentals-dom-exercise-files/jQueryDOM/HTMLOnly/ftp",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/exercises/jquery-fundamentals/3-jquery-fundamentals-dom-exercise-files/jQueryDOM/HTMLOnly/Default.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/exercises/jquery-fundamentals/2-jquery-fundamentals-selectors-exercise-files/HTMLOnly/Default.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/final/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/final/final.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/styles/reset.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/scripts/jquery.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Pluralsight/Jquery Fundamentals/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/vagrant/bloc-jams/Questions-For-Matt.jade",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/vagrant/frontend-javascript-exercises/frontend-javascript-exercises/04-strings/00-basics/challenge.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/Questions-For-Matt.jade",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/date-time/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/date-time/date-time.js",
+		"/Users/JTSeaver/Desktop/index backup ",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/sftp-config.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/todo/todo.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/exceptions/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/strings/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/todo/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/todo/todo.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L7-01.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L7-01.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L8-OB-1.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-OB-1.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-OB-1-JSON.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-OB-1.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-OB-1.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-01.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L6-01.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/todo/todo.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/todo/save.php",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/photoviewer/photos.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Json & Ajax/L1-01.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Json & Ajax/intro.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/twitter/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/twitter/twitter.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L1-01.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L3-01.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/twitter/twitter.json",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/jsonajax/L3-01.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/final/final.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/random.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab16-objective1--b.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab16-objective1--a.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab13-objective1--a.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab15-objective2--a.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/playingwithnodes.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/photoviewer/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/photoviewer/photoviewer.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab15-objective1--a.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/photoviewer/javascript-styling.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/DIFF/1.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/DIFF/2.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/DIFF/3.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab11-objective--e.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab11-objective2--c.html",
+		"/Users/JTSeaver/Desktop/function switchMode(newMode) {.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab11-objective2--b.html",
+		"/Users/JTSeaver/Desktop/modes-for-stephen-2.html",
+		"/Users/JTSeaver/Desktop/random-stephen.html",
+		"/Users/JTSeaver/Desktop/modes-for-stephen.html",
+		"/Users/JTSeaver/Library/Application Support/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/public/stylesheets/app.css",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/express/views/test.jade",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/express/views/user.jade",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab11-objective.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/express/views/practice.jade",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant/bloc-jams/express/views/jesseseaver",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab11-objective--b.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/random.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab10-objective-constructor.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/lab10-objective.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/download/Scratch.plist",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/download/stylesheets/theme.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/stylesheets/fonts.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/stylesheets/theme.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/sftp-config.json",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/Drake Coker/www.scrathvinyl.com/getinthegroove/index.html",
+		"/Users/JTSeaver/Desktop/test",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/parsechat.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/scripts/jscolor/demo.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/L2-Objective1.html",
+		"/Users/JTSeaver/Desktop/2",
+		"/Users/JTSeaver/Desktop/1",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript/guessinggame.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/mc-success2.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/mc-success.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/success.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/css/base.min.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/css/base.css",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/index.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/L8-Objective1.html",
+		"/Users/JTSeaver/Documents/WORK SET/Various Web/GFFmag/gffmag.com/splash/js/jquery.nicescroll.js",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/L6-Objective-2.html",
+		"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/L6-Objective-1.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Orielly/Modern Javascript",
+			"/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/BLOC/bloc-vagrant"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"done",
+			"profileImage",
+			"glowing",
+			"background-color",
+			"white",
+			"Blah",
+			"molly",
+			"span",
+			"li",
+			"spanDone",
+			"span",
+			"deleteItem",
+			"getFormData",
+			"theForm",
+			"span",
+			"todos",
+			"todoItem",
+			"todoArray",
+			"todoJSON",
+			"tilla",
+			"quote",
+			"javascript",
+			"77",
+			"selectedindex",
+			"radio",
+			"grey-background orange-text",
+			"download",
+			"tilla",
+			"pickles",
+			"tilla",
+			"h1 { font-sze",
+			"65px",
+			"sentence",
+			"Sentence",
+			"sentence"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/JTSeaver/Documents/WORK SET/1 SCHOOL/2014 Training/Questions-For-Matt.html",
+					"settings":
+					{
+						"buffer_size": 6170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5344,
+								5344
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1861.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "jesse.html",
+					"settings":
+					{
+						"buffer_size": 22199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11442,
+								11442
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7322.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/dataservices.js",
+					"settings":
+					{
+						"buffer_size": 750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								721,
+								721
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "json/1.json",
+					"settings":
+					{
+						"buffer_size": 8297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/styles.css",
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 202.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"L2-Objective1.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 327.0,
+	"status_bar_visible": true
+}

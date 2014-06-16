@@ -1,0 +1,811 @@
+<!doctype=html>
+<html>
+<title>Jesse's JQuery Tips and Tricks</title>
+<head>
+
+<!--Load Scripts-->
+
+<!--Load from a CDN, but with with a fallback if it's not available-->
+<!--Note the // here. This makes this work with SSL and non SSL
+	First script calls CDN, second script calls local if CDN is offline -->
+
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
+<script> window.jQuery || document.write("<script src='scripts/jquery.js'><\/script>");</script>
+
+<!--Use Toastr.JS to serve growl type notifications for messages playing with these tips/tricks. 
+	See all API methods here : http://codeseven.github.io/toastr/demo.html -->
+
+<!--script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script-->
+<script> window.toastr || document.write("<script src='scripts/toastr.js'><\/script>");</script>
+
+<!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
+<script src='scripts/jquery-ui.js'></script>
+
+<!--script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+<!--script src='scripts/bootstrap.js'></script>
+
+<!--Load a Data Services Script where the AJAX promises are made, See section below-->
+<script type="text/javascript" src="scripts/dataservices.js"></script>
+
+<!--MomentJS for time manipulation examples-->
+<script type="text/javascript" src="scripts/moment.js"></script>
+
+<!--MomentJS for time manipulation examples-->
+<script type="text/javascript" src="scripts/modernizr.js"></script>
+
+<!--Styles-->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/toastr.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<!--link rel="stylesheet" type="text/css" href="css/bootstrap.css"-->
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+<!--Start JQuery-->
+<script type="text/javascript">
+$(document).ready(function($) {
+	
+	//## A listing of tips and tricks to make Jqeury faster and easier to maintain compiled during my training. 
+
+	//## DOM Manipulation 
+	
+		//1.Cache a Selector, vs calling it multiple times. 
+		//2.Instead of manipulating the DOM in a loop, use an array. 
+		//3.Check to see if an element exists.
+		//4.Find vs. Filter
+		//5.Using the end() function 
+		//6.Using an Object with Setter Methods 
+		//7.Use classes over Styles in JQuery
+
+	//## Handling Events
+
+		//1. Use three parameter .on() (instead of .bind(), .live(), and .delegate().,etc.)
+		//2. Handling Event Delegation
+		//3. Namespacing your events
+		//4. Register Events before DOM is ready 
+		//5. Reuse an existing method as an event handler. 
+		//6. Create a custom event. 
+		//7. Depermine User Input
+		//8. Determine if event was triggered by the user. 
+		//9. Just in time initilization. 
+
+	//## Ajax and Data Tips 
+
+		//1. Ajax Promises & Consolidating JQuery/Ajax Calls
+		//3. Resolving Multiple Calls with .when()
+		//4. Adding Headers to an Ajax Request
+		//5. Custom Ajax Converters
+		//6. Storing Data with the data() function
+		//7. Working with HTML5 data-* attributes
+
+	//## Utilities
+
+		//1. Using the $.map method
+		//2. Using the $.grep method
+		//3. Using the $.type method
+		//4. Feature Detect, not $.browser Detect
+		//5. Using the $.Callbacks Object
+
+
+	//################################## DOM Manipulation ################################## //
+
+	//1. Cache a Selector, vs calling it multiple times. 
+		var emailDiv = $('#emailContainer');
+		var ordersDiv = $('#ordersContainer');
+		//Use a function to find elements
+		function getPanels (containerDiv) { 
+			var panels = containerDiv.find('.panel');
+				//alert(panels.length);
+		}
+		getPanels(emailDiv); //Here, passing hn the #emailContainer Div. 
+
+		//Create a sudo class custom selector and use it. 
+		$.extend($.expr[':'], { 
+			hasPanelClass: function (e) {return $(e).hasClass('panel');}
+		});
+		//Then use it
+		$('div:hasPanelClass').click (function () {$(this).addClass('panelClass');});
+
+		//Use the cached selector(s) in an each function
+		//Build the function
+		function updatePanels($context) { 
+			$context.find('div.panel').each(function (i) {
+				$(this).html("Panels within the context: " + i);
+			});
+		}
+		updatePanels(emailDiv);
+		updatePanels(ordersDiv);
+
+	//2. Instead of manipulating the DOM in a loop, use an array. 
+		function fragment () { 
+		var divs = [];
+		//Could also concatonate a string : var divs = ""; for a little better speed. 
+		var total = 5;//Just to give this example something to work with.
+		for (var i = 0; i <= total; i++) {divs.push("<div class='panel'>" + i + "</div>");}
+		$('#message1').html(divs.join(""));//For the string version, it would be $('#message1').html(html);
+		}
+		fragment();
+
+	//3. Check to see if an element exists. 
+	//You _always_ get back a wrapped set, so just check the length property. 
+		var $mySelector = $('#doesThisExist');
+		if ($mySelector.length) {alert("It Exists");} 
+			else { 
+				toastr.success('Welcome to JQuery Tips and Tricks', "From : Dom : # 3");
+			}
+
+	//4. Find vs. Filter
+		//Using the People li below
+		var $names = $('#people li'); //All the li's in the people ul
+		var $pubs = $names.find('.publisher'); //Wont return anything because there are no descendants of the li's with the class
+		var $pubs2 = $names.filter('.publisher'); //Will return the two li's that have that class. (As opposed to finding the children) 
+		$('#message2').html($pubs2);
+		$pubs2.fadeOut(4500);//Just showing how a JQuery wrapped $variable can have methods applied to it. 
+
+	//5. Using the end() function 
+		var cust = { 
+			name: "Jesse", 
+			city: "Heath"
+		};
+		$('<div class="cust"><span /></div>')
+			.find("span")
+				.attr("title", cust.name)
+				.data(cust)
+				.html(cust.name)
+				.end() //Moves us up a notch, so that it actually appends the div to message3, not just the span. 
+			.appendTo('#message3');
+
+	//6. Using an Object with Setter Methods ( Use objects to set multiple values vs calling .attr multiple times) 
+		$('a.main').attr({
+			'href':'http://www.jesseseaver.com',
+			'target': '_blank',
+			'title': 'Jesse Seaver'
+		});
+
+	//7. Use classes over Styles in JQuery for better efficiency. This is an obvious one but good to mention. 
+
+		//You could use an object to set several CSS classes: 
+		$('#doesntExist').css({
+			'style1':'property1',
+			'style2':'property2'
+		});
+		//But just like in CSS using classes is faster and more maintainable, 
+		$('#doesntExist').addClass('class_name'); //Then define this class in your CSS. 
+
+
+	
+	//################################## Events ################################## //
+
+	//1. Use three parameter .on() (instead of .bind(), .live(), and .delegate()) 
+
+		//All shorthand methods, such as blur, change, click, focus, etc 
+		//are all shorthand methods on the two parameter .on(a,b) method. 
+
+		
+		//with the click
+			//$('#members').find('li a').click(function (e) {
+		//with the bind 
+			//$('#members').find('li a').bind("click", function (e) {
+		//with two paramter on 
+			//$('#members').find('li a').on("click", function (e) {
+		//with delegate (this works for bubbling up, ones above dont)
+			//$('#members').delegate("li a", "click", function (e) {
+		//Finally, with with three parameter .on(a,b,function)
+			$('#members').on("click", "li a",  function (e) {
+			//Prevents the a from fetching it's URL
+			e.preventDefault();
+			//And instead displays this message with Toastr
+			toastr.success($(this).text(), "Events: #1 ");
+		});
+		//These new li items wont trigger the function on click and bind, but will with delegate
+		$('#eventButton1').on("click", function(event) {
+			$("<li><a href='#'>New Detail</a></li>").appendTo('#members');
+		});
+
+
+	//2. Handling Event Delegation 
+
+		//Stop Immediate Propogation of an event ( Use this instead of return false!)
+
+		//This could be used to disable a set of node clicks on certain items ( a .nonActive class,etc)
+		//Remember, Events are added in the order you add them, so an event after a halt will not fire. 
+
+		$("#dontBubble a").on("click", function (e) { 
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			//Because we called stopImmediatePropagation, you wont see this alert below.
+			//This disabled event propogation for this single node, whereas {return false;} kills propagation app wide.  
+			// Comment that out, and this alert will show, proving it didn't halt
+		}).on("click", function(e) {toastr.warning("Propogation Didn't Halt", "From Event : #2");});
+
+		//Stop Returning False - it's not the best idea as it stops event propogation. 
+
+	//3. Namespacing your events
+
+		//You can namespace any event type by appending a period and a unique term. 
+
+		//In this example .glow is the namespace that adds a special glowing class we created. 
+		//After the submit button is clicked, we want to remove _all_ the special glowing, and
+		//go back to the defaults. 
+
+		$('input.date').datepicker();
+		$('#event3 input').on("focus.glow blur.glow", function(e){
+			$(this).toggleClass('glowing', e.type === "focus");
+			//Only throw alert message when it's on focus, not on blur.
+			if (e.type =="focus"){toastr.success("Now it glows!", "From Event #3");}
+		});
+
+		$('button[type="submit"]').on("click", function (e) { 
+			e.preventDefault();
+			toastr.success("Save Changes, Remove Class, Done.", "From Event #3");
+			//Now, like a wildcard, you can remove all .glow's 
+			$("input").off(".glow");
+			toastr.success("Namespace removed. Glowing Off.", "From Event #3");
+		});
+
+
+	//4. Register Events before DOM is ready 
+
+		//Some initilization code can be spread out before the DOM is ready. Perhaps adding aattributes or showing a loading alert.  
+		//This can be done using the three parameter on method, with $(document).
+		//This will be available even before the DOM is ready.
+		//This could be tested by uncommenting it and moving it outside the $(document).ready function we are in now.  
+		$(document).on("click", "div", function() { 
+			if (!$(document).ready) {toastr.success("Dom still loading...", "From Event #4")};
+			if ($(document).ready) {return;}
+		});
+		
+
+	//5. Reuse an existing method as an event handler.
+
+		//Constructor Function
+		var Person = function (firstName, lastName) { 
+			this.firstName = firstName;
+			this.lastName = lastName;
+		};
+
+		//Render Method off the Person Constructor
+		Person.prototype.render = function ($output) { 
+			$("<code></code>", {
+				html: this.firstName + " " + this.lastName,
+				click: this.clicked.bind(this)
+			}).appendTo($output);
+		};
+		//Click Event Handler 
+		Person.prototype.clicked = function () { 
+			toastr.success(this.firstName + " " + this.lastName, "Click - From Event #5");
+		};
+		//When we click the button, we scrape the screen of the first name and last name and where to put it. 
+		$('#reUse').on("click", function(e){
+				var firstName = $('#firstName').val(),
+				lastName = $('#lastName').val(),
+				$output = $('#output'), person;
+			e.preventDefault();
+			person = new Person(firstName, lastName);
+			person.render($output);
+		});
+
+		
+
+	//6. Create a custom event. 
+
+		//Create a new 'madeUpEventName' event type 
+		$('input').on("madeUpEventName", function() { 
+			$(this).val("");
+		});
+
+		//Trigger custom event type
+		$('#customEvent').on("click", function(e){ 
+			$("input").trigger("madeUpEventName");
+			toastr.success("All Inputs Cleared using custom event 'madeUpEventName'", "From Event #6");
+		});
+
+
+	//7. Depermine User Input
+
+		//Every JQuery event that fires is given a 'event object' with properties that can be read and manipulated.
+		//This shows how you can grab a value and assign it to another object as the user types, or click, etc.  
+		 $("#name").on("keypress", function (e) {
+            toastr.success(e.which, "KeyPress");
+        });
+
+		var profileImageURL = $('#profileImageUrl');
+		var image = $("#profileImage");
+
+        profileImageURL.on("keyup", function () {
+            image.attr("src", profileImageURL.val());
+            if (profileImageURL.val() == "http://onetoshare.com/oGP2+") { 
+            	$('#imgMessage').html("<span>You got it! The image is loading below. Now try clicking on the image to see mouse x and y positions.</span>");
+            	image.on("click", function (e) {
+            toastr.success(e.offsetX + " " + e.offsetY, "Offset");
+        		});
+            } else { 
+            	image.attr('src', 'images/loader.gif');
+            	$('#imgMessage').html("<span>http://onetoshare.com/oGP2+</span>");
+            }
+        });
+
+        
+	//8. Determine if event was triggered by the user. 
+			//e.original event will be true if the user clicks, and undefined (or false) if the trigger fires before that.
+			//This is a way we can tell if the user did the click ( or whatever event ) , or if the program did.
+		  $("#profileImage").on("click", function (e) {
+		  	//Here in Toastr, we can check if a property (e.originalEvent ?)is is either "true" : "false"
+            toastr.success(e.originalEvent ? "Human" : "Computer", "From Events # 8 : Trigger by");
+        });
+
+			//Uncomment out these three lines below to enable the programatic trigger and alert example. 
+
+	        // setTimeout(function () {
+	        //     $("#profileImage").trigger("click");
+	        // }, 5000);
+
+	//9. Just in time initilization. 
+
+		//On larger applictions, waiting to init some things can be smart. 
+		var functionToRun = function (e) { 
+			toastr.success("functionToRun, Ran Just in Time!", "From Events #9:");
+		}
+
+		$(document).on("focus", "#justInTime", function(e) { 
+			functionToRun(e);
+		});
+
+
+
+	//################################## Ajax and Data Tips ################################## //
+
+	
+	//1. Ajax Promises, and Consolidating AJAX calls with a dataservices.js file. 
+
+		//Promises : 
+
+		//Proimses are a way to handle a Async call in a flexible way. It is an object that helps you deal with deffered results. 
+		// For example, client calls getAccount(), and instead fo waiting to return data, it returns instaly with a 'promise'
+		// This promise means that data, or an error, are coming. getAccount() continues to run, and then resolves the promise when finished. 
+		// See Diagrams : http://onetoshare.com/Wp9q, and http://onetoshare.com/fdI6
+		
+		//Standard JSON Call without a promise  - on a button click. 
+		$('#getFlikr').click( function(){ 
+			$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=coffee&tagmode=any&format=json&jsoncallback=?",
+	        function(data){
+	          $.each(data.items, function(i,item){
+	            $("<img/>").attr("src", item.media.m).appendTo("#JSONimages1");
+	            if ( i == 3 ) return false;
+	          });
+	        });
+	        toastr.success("Loaded direct, without promise data", "From Ajax #1: ")
+		});
+
+		//Refactored with a promise. 
+
+		// Here is the promise function.
+		// But, it's actually loading from scripts/dataservices.js. 
+
+			// getFlikrData = function () { 
+			// 	return $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tagmode=any&format=json&jsoncallback=?");
+			// }
+
+		//Since we called dataservices.js already, we have the JSON call done and the promise, we can use it : 
+
+		//Get Flikr processes the data, but doesn't call it, getFlikrData(above/in dataservices.js) does that.
+		getFlikr = function () { 
+
+			  //For this example, define a var for the promise. You can see getFlikrData here.
+			  //Note, we could remove this 'promise' variable here and just use the function name. 
+			  var promise = getFlikrData();
+			  //Deal with the promise
+			  promise
+			  //Chain on  - When it's done
+			  .done(function(data){
+	          $.each(data.items, function(i,item){
+	            $("<img/>").attr("src", item.media.m).appendTo("#JSONimages2");
+	            if ( i == 3 ) return false;
+	          });
+	          toastr.success("Loaded with promise data", "From Ajax #1: ")
+	        })
+			 //Chain On - If it fails
+			  .fail(function () { 
+			  	toastr.warning("Couldn't Load JSON from Flicker", "From Ajax #1:");
+			  });
+		}
+			//The button calls the function getFlikr
+			$('#getFlikrPromise').click(function (){
+				getFlikr();
+			});
+
+		//Just for fun, Re-Use the promise data in a seperate button/result example.
+		
+		getFlikrAgain = function () { 
+
+			  //Calls the promise again, without re-defining the JSON call
+			  var promise = getFlikrData();
+			
+			  //Deal with the promise, again
+			  promise
+			  //When it's done
+			  .done(function(data){
+	          $.each(data.items, function(i,item){
+	            $("<img/>").attr("src", item.media.m).appendTo("#JSONimages3");
+	            if ( i == 3 ) return false;
+	          });
+	          toastr.success("Loaded with promise data, again", "From Ajax #1: ")
+	        })
+			 //Or, If it fails
+			  .fail(function () { 
+			  	toastr.warning("Couldn't Load JSON from Flicker, again", "From Ajax #1:");
+			  });
+		}
+			$('#getFlikrPromise2').click(function (){
+				getFlikrAgain();
+			});
+
+		//Button to Clear the images while  testing
+		$('#clearImages').click( function () { 
+			$('.flikrImages').html("");
+		});
+
+	
+
+	//2. Resolving Multiple Calls with .when(), and tracking promises. 
+		//In this example, we will check to see if all our promises have run and if they have, show a green square, and if they
+		//have not, show a red square. 
+		// Diagram on .when's functionality : http://onetoshare.com/GuPz
+
+		//Check all our promises ( we could consolidate these in dataservices.js into a single function)
+		
+		// $.when(testJSON.json1(),testJSON.json2(),testJSON.json3())
+
+		// 	//When done..boxes green.
+		// 	.done(function (json1) {
+		// 		$('#whenMessage').css('background-color', 'green');
+		// 		var message = $.parseJSON(json1).val();
+		// 		$('#whenMessage').text(message[1].eyeColor);
+		// 	})
+		// 	//Or if fail..boxes red.
+		// 	.fail( function() {
+		// 		//toastr.warning("JSON Didn't Load Correctly", "From Ajax #2 : ");
+		// 	});
+
+
+		// whenTest.whenFunction
+		// 	.done(function (json1) {
+		// 		$('#whenMessage').css('background-color', 'green');
+		// 		var message = $.parseJSON(json1).val();
+		// 		$('#whenMessage').text(message[1].eyeColor);
+		// 	})
+		// 	//Or if fail..boxes red.
+		// 	.fail( function() {
+		// 		//toastr.warning("JSON Didn't Load Correctly", "From Ajax #2 : ");
+		// 	});
+
+
+	//4. Adding Headers to an Ajax Request
+
+		//Coming Soon
+
+	//5. Custom Ajax Converters
+
+		//Coming Soon
+
+	//6. Storing Data with the data() function
+
+		//Data can be stored on a given element using the .data() function 
+		//Note : Jquery will remove data when the element is removed. 
+		
+		//Add a single key
+		// $('selector').data("Your Key", "Data to Store");
+
+
+		//And access that data
+
+		// var value = $('selector').data("Your Key");
+
+
+		//Or, Add multiple keys and define the varibale at the same time. 
+		// var multipleData = $('selector').data.data();
+		// multipleData.value1 = orders;
+		// multipleData.value2 = names;
+
+	//7. Working with HTML5 data-* attributes
+
+		//Coming Soon
+
+
+
+	//################################## DOM Manipulation ################################## //
+
+
+
+	//1. Using the $.map method
+		//A way to tweak data from a server, for example. 
+
+		//Start with an array of some sort
+		var firstPeople = [
+			{fn: "John", ln: "Doe", bday: "11/19/1936"},
+			{fn: "John", ln: "Smith", bday: "12/15/1922"},
+			{fn: "John", ln: "Edwards", bday: "9/1/1965"}
+		]	
+
+		//Map the data to a new array with new data values
+		secondPeople = $.map(firstPeople, function (person) {
+			return { 
+				firstName: person.fn,
+				lastName: person.ln,
+				//Use moment.js to calculate the years old
+				age: moment().diff(moment(person.bday), "years")
+
+			};
+		});
+		$('#originalObject').html(JSON.stringify(firstPeople));
+		$('#newObject').html(JSON.stringify(secondPeople));
+
+
+
+	//2. Using the $.grep method
+
+		//A way to search an array and filter data.
+		//In this example, we will only show people who are older than 60 years old. 
+		
+		//The array to search 
+		var searchMe = [
+			{fn: "John", ln: "Doe", age: "33"},
+			{fn: "John", ln: "Smith", age: "43"},
+			{fn: "John", ln: "Edwards", age: "63"},
+			{fn: "Mary", ln: "Michaels", age: "73"},
+			{fn: "Angie", ln: "Phillips", age: "83"},
+			{fn: "Lucy", ln: "Stein", age: "23"}
+		]	
+
+		//Using .grep to search the array for people with age val of > 60
+		searched = $.grep(searchMe, function(person) { 
+
+			return person.age > 60;
+
+		});
+
+		//Stringify the results and display
+		$('#grepDiv').html(JSON.stringify(searched));
+
+
+
+	//3. Using the $.type method
+
+		//Because jaavscripts typeof operator wont always be specific enough, jQuery can help with this with the $.type operator. 
+
+		console.log($.type(true)); //boolean
+		console.log($.type(10)); //number
+		console.log($.type("Jesse")); //string
+		console.log($.type(function() {})); //function
+		console.log($.type(undefined)); //undefined
+		console.log($.type({name: "Jesse"})); //object
+		console.log($.type(null)); //null
+		console.log($.type(new Error())); //error
+		console.log($.type(Date())); //string
+		console.log($.type([{name:"Jesse"}])); //array
+		console.log($.type(/^\w+$/)); //regexp
+
+
+	//4. Feature Detect, not $.browser Detect ( or browser sniffing ) using Modernizr. 
+
+		//Feature detection is preffered over browser detection
+
+		//This example checks to see if local storage is available. 
+
+		if(Modernizr.localstorage) { 
+			window.localStorage.setItem('loadTime', Date.now());
+			$('#modernizrMessage').text("Modernizr Used Local Storage: " + Date.now());
+
+		} else { 
+			var message = document.cookie = 'loadTime' + Date.now();
+			$('#modernizrMessage').text("Used a Cookie: " + Date.now());
+
+		}
+
+		//Or using the modernizr Load 
+		// Modernizr.load({ 
+
+		// 	test: Modernizr.localstorage,
+		// 	yep: 'File to Load ',
+		// 	nope: 'File to Load', 
+		// 	complete: function () { 
+
+		// 		console.log("Modernizr Load Complete");
+		// 	}
+
+		// })
+
+
+
+
+	//5. Using the $.Callbacks Object
+
+	//This example builds a calculator function with an add and a multiple callback.
+
+	var calculator = { 
+
+		add: function (operand1, operand2) { 
+			$('#callbacksMessage').append("Added is : " + (operand1 + operand2) + "<br>");
+		}, 
+		multiply: function (operand1, operand2) { 
+			$('#callbacksMessage').append("Multiplied is : " + (operand1 * operand2));
+		}
+
+
+	};
+
+	//Invoke the callback method and add the add and multiple methods, then fire the callback with the variables. 
+	var callbacks = $.Callbacks();
+	callbacks.add(calculator.add);
+	callbacks.add(calculator.multiply);
+	callbacks.fire(122323,3);
+
+
+
+
+
+
+//End Doc Ready
+});
+
+</script>
+</head>
+<body>
+	<h1> Jesse's JQuery Tips and Tricks</h1>
+	<h4> HTML below coresponds to cope snippets in the document head </h4>
+	<div class="sep"></div>
+	<h2>Dom Manipulation</h2>
+<!--Dom Manipulations --> 
+<h3>#1</h3>
+<div id="emailContainer">
+	<div class="panel">
+		...
+	</div>
+	<div class="panel">
+		...
+	</div>
+</div>
+<div id="ordersContainer">
+	<div class="panel">
+		...
+	</div>
+	<div class="panel">
+		...
+	</div>
+</div>
+<h3>#2</h3>
+<div id="message1"></div>
+<h3>#4</h3>
+<ul id="people"> 
+	<li class="publisher">Publisher Class</li>
+	<li class="publisher">Publisher Class</li>
+	<li class="owner">Owner Class</li>
+</ul>
+<div id="message2"></div>
+<h3>#5</h3>
+<div id="message3"></div>
+<h3>#6</h3>
+<a class="main" href="#">Sample Link</a>
+<!--Events-->
+<div class="sep"></div>
+<h2>Events</h2>
+<h3>#1</h3>
+<ul id="members"> 
+	<li><a href="somepage.html?id=1">Detail 1</a></li>
+	<li><a href="somepage.html?id=2">Detail 2</a></li>
+	<li><a href="somepage.html?id=3">Detail 3</a></li>
+</ul>
+<button id="eventButton1">Add Item</button>
+<h3>#2</h3>
+<div id="dontBubble">
+<a href="somepage.html">Dont Bubble Up</a>
+</div>
+<h3>#3,4,5</h3>
+<div id="event3">
+	 <form class="form-horizontal well">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="firstName">First Name</label>
+                <div class="controls">
+                    <input id="firstName" type="text" class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="lastName">Last Name</label>
+                <div class="controls">
+                    <input id="lastName" type="text" class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="birthday">Birthday</label>
+                <div class="controls">
+                    <input id="birthday" type="text" class="date input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="anniversary">Anniversary</label>
+                <div class="controls">
+                    <input id="anniversary" type="text" class="date input-xlarge">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button class="btn">Cancel</button>
+                <button id="reUse">Reuse Method Example</button>
+            </div>
+             <div id="#output"></div>
+        </fieldset>
+    </form>
+</div>
+<div>
+<h3>#6</h3>
+<input type="text" value="hello" />
+<input type="text" value="world" />
+<button id="customEvent">Clear</button>
+</div>
+<h3>#7</h3>
+<div>
+    <form class="form-horizontal well">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="firstName">Name</label>
+                <div class="controls">
+                    <input id="name" type="text" class="input-xlarge">
+                    <span>As you type, Jquery checks the keycode for the key you pressed.</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="profileImageUrl">Profile Image</label>
+                <div class="controls">
+                    <input id="profileImageUrl" type="text" class="input-xlarge" />
+                    <div id="imgMessage">
+                    	<span>This field sets the image path. Set it to : http://onetoshare.com/oGP2+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <img id="profileImage" src="" class="img-rounded" />
+
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<h3>#9</h3>
+<button id="justInTime">Just In Time</button>
+<!-- Ajax and Data Tips -->
+<div class="sep"></div>
+<h2>Ajax & Data</h2>
+
+<div>
+	<h3>#1</h3>
+	<button id="getFlikr">Fetch 5 Flickr Images tagged 'Coffee', without using a promise</button>
+	<button id="getFlikrPromise">Fetch 5 Random Flikr images, using a promise.</button>
+	<button id="getFlikrPromise2">Re-Use Promise</button>
+	<button id="clearImages">Clear Images</button>
+	<div class="flikrImages" id="JSONimages1"></div>
+	<div class="flikrImages" id="JSONimages2"></div>
+	<div class="flikrImages" id="JSONimages3"></div>
+</div>
+
+<div>
+	<h3>#2</h3>
+	<div class="whenAlert" id="whenMessage"></div>
+</div>
+<!-- Ajax and Data Tips -->
+<div class="sep"></div>
+<h2>Utilities</h2>
+<h2>#1</h2>
+<span>The original object...</span>
+<div id="originalObject"></div>
+<span>And the new mapped object...using moments to caculate the years</span>
+<div id="newObject"></div>
+<h2>#2</h2>
+<span>The people older than 60 were : </span>
+<div id="grepDiv"></div>
+<h2>#4</h2>
+<div id="modernizrMessage"></div>
+<h2>#5</h2>
+<div id="callbacksMessage"></div>
+</body>
+</html>
